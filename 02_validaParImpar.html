@@ -1,15 +1,23 @@
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <script>
-    /*
+  /*
     //PROBLEMA: Faça um script que peça um número inteiro e determine se ele é par ou ímpar.
     */
 
-    //ENTRADA
+  //ENTRADA
+  const numero = Number(prompt(`Informe um numero`));
+  //PROCESSAMENTO
+  switch (numero % 2) {
+    case 0:
+      alert(`O  número ${numero} é impar`);
 
-    
-    //PROCESSAMENTO
+      break;
+    case 1:
+      alert(`O número ${numero} é par`);
+      break;
+    default:
+      alert(`Indique apenas números`);
+  }
 
-    
-    //SAÍDA
-
+  //SAÍDA
 </script>

@@ -1,6 +1,6 @@
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <script>
-    /*
+  /*
     //PROBLEMA: Faça um script que pergunte em que turno você estuda.
     Peça para digitar M-matutino ou V-Vespertino ou N- Noturno.
     Imprima a mensagem
@@ -10,13 +10,24 @@
     - "Valor Inválido!"
     conforme o caso.
     */
+  //ENTRADA
+  const turno = prompt(
+    `Informe o turno que estuda,V(vespertino),M(Matutino),N(noturno )`
+  );
+  //PROCESSAMENTO
+  switch (turno) {
+    case "M":
+      alert(`Bom dia!`);
+      break;
+    case "V":
+      alert(`Boa tarde!`);
+      break;
+    case "N":
+      alert(`Boa noite!`);
+      break;
+    default:
+      alert(`Valor invalido, diga seu turno de volta`);
+  }
 
-    //ENTRADA
-    
-    
-    //PROCESSAMENTO
-
-    
-    //SAÍDA
-
+  //SAÍDA
 </script>
