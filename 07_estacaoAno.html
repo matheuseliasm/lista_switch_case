@@ -4,13 +4,72 @@
     //PROBLEMA: Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual.
     De acordo com as respostas, informe qual a estação do ano correspondente.
     */
+      //ENTRADA
+      const hemisferio = prompt("Qual hemisferio você está?");
+        const mes = Number(prompt("Qual mês você está?"));
 
-    //ENTRADA
+        //PROCESSAMENTO
+        let estacao = "";
 
-    
-    //PROCESSAMENTO
+        switch (hemisferio.toLowerCase()) {
+            case "norte":
+                switch (mes) {
+                    case 1:
+                    case 2:
+                    case 12:
+                        estacao = "Inverno";
+                        break;
+                    case 3:
+                    case 4:
+                    case 5:
+                        estacao = "Primavera";
+                        break;
+                    case 6:
+                    case 7:
+                    case 8:
+                        estacao = "Verão";
+                        break;
+                    case 9:
+                    case 10:
+                    case 11:
+                        estacao = "Outono";
+                        break;
+                    default:
+                        estacao = "Mês inválido";
+                        break;
+                }
+                break;
+            case "sul":
+                switch (mes) {
+                    case 1:
+                    case 2:
+                    case 12:
+                        estacao = "Verão";
+                        break;
+                    case 3:
+                    case 4:
+                    case 5:
+                        estacao = "Outono";
+                        break;
+                    case 6:
+                    case 7:
+                    case 8:
+                        estacao = "Inverno";
+                        break;
+                    case 9:
+                    case 10:
+                    case 11:
+                        estacao = "Primavera";
+                        break;
+                    default:
+                        estacao = "Mês inválido";
+                        break;
+                }
+                
+        }
+
+        //SAÍDA
+        alert(`A estação do ano correspondente é: ${estacao}`);
+    </script>
 
 
-    //SAÍDA
-
-</script>
